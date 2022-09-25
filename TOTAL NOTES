@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+int main(){
+  int a;
+  cout<<"Enter total amount";
+  cin >> a;
+  int n100 = 0;
+  int n50 = 0;
+  int n50_1 = 0;
+  int n20 = 0;
+  int n20_1 = 0;
+  int n1_1 = 0;
+  int n1 = 0;
+  switch(a>=100 || n50>=50 || n20>= 20 || n1>=1){
+    case 1 : cout<<"Number of 100 rs notes required :)";
+             (n100 = a / 100);
+             cout << n100 << endl;
+                             
+      
+             (n50 = a - (n100*100));
+             
+    }
+  switch(a>=100 || n50>=50 || n20>= 20 || n1>=1){
+    case 1 : cout<<"Number of 50 rs notes required :) ";
+             (n50_1 = n50 / 50);
+             cout<< n50_1 <<endl;
+             (n20 = n50 - (n50_1*50));
+    }
+             
+  switch(a>=100 || n50>=50 || n20>= 20 || n1>=1){
+    case 1 : cout<<"Number of 20 rs notes required :) ";
+             (n20_1 = n20/20);
+             cout<< n20_1 <<endl;
+             (n1 = n20 - (n20_1 * 20)) ;   
+    }
+  switch(a>=100 || n50>=50 || n20>= 20 || n1>=1){         
+    case 1 : cout<<"Number of 1 rupee coins required :) ";
+             (n1_1= n1 / 1);
+             cout<< n1_1 <<endl;
+             break;
+    }
+  
+  
+  }
